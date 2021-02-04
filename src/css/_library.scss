@@ -1,0 +1,84 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: white;
+  // background: #f7f1e3;
+  box-shadow: 2px 2px 50px rgb(204, 204, 204);
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  // visibility: hidden;
+  h2 {
+    padding: 2rem;
+  }
+}
+
+.library-songs {
+  .library-details {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    img {
+      width: 30%;
+    }
+    &:hover {
+      background: rgb(250, 229, 246);
+    }
+  }
+  .song-description {
+    padding-left: 1rem;
+    h3 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(250, 229, 246) rgba(250, 186, 225, 0.2);
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar:hover {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(250, 229, 246);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background: #fabae1;
+  }
+}
+
+.selected {
+  background: #fabae1;
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}

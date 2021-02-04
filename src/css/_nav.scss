@@ -1,0 +1,31 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    &:hover {
+      background: rgba(245, 185, 242, 0.2);
+      border-radius: 5px;
+      transform: translateX(3px) scale(1.2);
+    }
+  }
+}
+
+.active-button {
+  background: rgba(245, 185, 242, 0.2);
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
