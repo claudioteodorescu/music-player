@@ -129,19 +129,15 @@ h4 {
   width: 50%;
 }
 
-.play-control .shuffle,
 .play-control .skip-back,
 .play-control .play,
 .play-control .pause,
-.play-control .skip-forward,
-.play-control .repeat-all {
+.play-control .skip-forward {
   pointer-events: none;
 }
 
-.play-control .shuffle,
 .play-control .skip-back,
-.play-control .skip-forward,
-.play-control .repeat-all {
+.play-control .skip-forward {
   font-size: 1.5rem;
 }
 

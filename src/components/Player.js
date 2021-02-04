@@ -1,12 +1,12 @@
 // import { useEffect } from "react";
 
 import {
-  TiArrowShuffle,
+  // TiArrowShuffle,
   RiSkipBackMiniFill,
   RiPlayMiniFill,
   BiPause,
-  RiSkipForwardMiniFill,
-  RiRepeat2Fill
+  RiSkipForwardMiniFill
+  // RiRepeat2Fill
   // RiRepeatOneLine
 } from "react-icons/all";
 
@@ -98,9 +98,9 @@ const Player = ({
         <p>{getTimeHandler(songInfo.duration)}</p>
       </div>
       <div className="play-control">
-        <button>
+        {/* <button>
           <TiArrowShuffle className="shuffle" />
-        </button>
+        </button> */}
         <button onClick={() => skipTrackHandler("skip-back")}>
           <RiSkipBackMiniFill className="skip-back" />
         </button>
@@ -114,9 +114,9 @@ const Player = ({
         <button onClick={() => skipTrackHandler("skip-forward")}>
           <RiSkipForwardMiniFill className="skip-forward" />
         </button>
-        <button>
+        {/* <button>
           <RiRepeat2Fill className="repeat-all" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

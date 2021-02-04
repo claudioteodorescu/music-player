@@ -28,18 +28,16 @@
   align-items: center;
   padding: 1rem;
   width: 50%;
-  .shuffle,
+
   .skip-back,
   .play,
   .pause,
-  .skip-forward,
-  .repeat-all {
+  .skip-forward {
     pointer-events: none;
   }
-  .shuffle,
+
   .skip-back,
-  .skip-forward,
-  .repeat-all {
+  .skip-forward {
     font-size: 1.5rem;
   }
   .play,
